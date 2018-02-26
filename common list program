@@ -1,0 +1,17 @@
+Created on Mon Feb 19 22:11:11 2018
+
+@author: velocyreptor
+"""
+# common list
+list1=input("enter first string \n")
+list2=input("enter second string \n")
+common_list=[]
+for i in list(list1):
+    for j in list(list2):
+        if i==j:
+            print(i)
+            if i in common_list:
+                continue
+            else:
+                common_list+=[i]
+print("the list of common elements is", list(common_list), "with", len(common_list), "number of elements")
